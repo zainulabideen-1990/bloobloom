@@ -1,0 +1,45 @@
+.humburger:hover .humburger-menu {
+  left: 0%;
+}
+.humburger-menu {
+  width: 100vw;
+  height: calc(100vh - 41px);
+  left: -100vw;
+  top: 41px;
+  transition: 0.7s;
+}
+.menu:hover > .sub-menu {
+  opacity: 1;
+  left: 0%;
+  display: block;
+}
+.sub-menu {
+  display: none;
+  transition: 0.7s;
+  position: absolute;
+  opacity: 0;
+  top: 50px;
+  left: 100%;
+  min-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .humburger-menu {
+    width: 23.33vw;
+    left: -23.33vw;
+  }
+  .menu:hover > .sub-menu {
+    left: 100%;
+  }
+  .sub-menu {
+    min-width: 200px;
+    top: 0;
+  }
+}
+
+/* selection  */
+.selections input[type="checkbox"]:checked + label > p,
+.selections label:hover > div,
+.selections input[type="checkbox"]:checked + label > div {
+  border-color: black;
+}

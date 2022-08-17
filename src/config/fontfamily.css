@@ -1,0 +1,60 @@
+@font-face {
+  font-family: Light;
+  src: url(../assets/fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+  font-family: Regular;
+  src: url(../assets/fonts/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: Medium;
+  src: url(../assets/fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+  font-family: Bold;
+  src: url(../assets/fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+  font-family: Heavy;
+  src: url(../assets/fonts/Rubik-Black.ttf);
+}
+
+.Light {
+  font-family: Light;
+}
+
+.Regular {
+  font-family: Regular;
+}
+
+.Medium {
+  font-family: Medium;
+}
+
+.Bold {
+  font-family: Bold;
+}
+
+.Heavy {
+  font-family: Heavy;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Bold;
+  font-weight: unset;
+  line-height: 1.2;
+}
+
+h5,
+h6 {
+  font-family: Medium;
+  font-weight: unset;
+  line-height: 1.2;
+}
