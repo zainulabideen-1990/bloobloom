@@ -99,12 +99,15 @@ export default {
   watch: { 
      '$route': {
         handler: function(search) {
-          console.log(search)
           if(search && search.query && search.query.colour){
             this.filters.glass_variant_frame_variant_colour_tag_configuration_names = search.query.colour.split("~");
+          } else {
+            this.filters.glass_variant_frame_variant_colour_tag_configuration_names = [];
           }
           if(search && search.query && search.query.shape){
             this.filters.glass_variant_frame_variant_frame_tag_configuration_names = search.query.shape.split("~");
+          } else {
+            this.filters.glass_variant_frame_variant_frame_tag_configuration_names = [];
           }
           if(search && search.params && search.params.slug){
             this.collection = search.params.slug;
